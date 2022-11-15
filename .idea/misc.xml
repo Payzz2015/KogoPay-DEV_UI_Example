@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_backgroud.xml" value="0.14635416666666667" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_home_navigator.xml" value="0.17685185185185184" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/activity_loading_screen.xml" value="0.152" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/menu/list_nav_bottom.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
