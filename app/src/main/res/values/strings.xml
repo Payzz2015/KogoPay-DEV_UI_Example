@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">KogoPay - DEV UI Example</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="faq">FAQ</string>
+    <string name="about_us">About us</string>
+    <string name="setting">Setting</string>
+    <string name="other">Other</string>
+    <string name="fingerprint_faceid">Fingerprint / FaceID</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="change_language">Change language</string>
+    <string name="verify_account">Verify account</string>
+    <string name="_0205572xxxx">0205572XXXX</string>
+    <string name="jacob_hawkins">Jacob Hawkins</string>
+    <string name="more">More</string>
+    <string name="logout">Log out</string>
 </resources>

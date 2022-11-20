@@ -3,11 +3,56 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17314814814814813" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/bg_coin.xml" value="0.1648148148148148" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/bg_item_list.xml" value="0.15185185185185185" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/blend_backgroud.xml" value="0.17314814814814813" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/bottom_image.xml" value="0.14739583333333334" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/btn_shortcut_background.xml" value="0.16574074074074074" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/btn_switch_face.xml" value="0.15185185185185185" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/btn_verify.xml" value="0.15185185185185185" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/color_white_20.xml" value="0.14270833333333333" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_acc_nav.xml" value="0.17314814814814813" />
         <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_backgroud.xml" value="0.14635416666666667" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_edit.xml" value="0.15185185185185185" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_hide.xml" value="0.16574074074074074" />
         <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_home_navigator.xml" value="0.17685185185185184" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_icon24.xml" value="0.16574074074074074" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17314814814814813" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.17314814814814813" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_more_nav.xml" value="0.17314814814814813" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_notification.xml" value="0.16574074074074074" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_rectangle.xml" value="0.16574074074074074" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_round_qr_code_scanner_24.xml" value="0.16574074074074074" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/ic_scan_nav.xml" value="0.12" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/icon24.xml" value="0.16574074074074074" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/item_list_rectangle.xml" value="0.15185185185185185" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/item_selected_nav.xml" value="0.14739583333333334" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/profile_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/rectangle_face.xml" value="0.15185185185185185" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/drawable/show_selector.xml" value="0.1" />
         <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/activity_loading_screen.xml" value="0.152" />
         <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/fragment_account.xml" value="0.12439261418853255" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/fragment_home.xml" value="0.22456140350877193" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/fragment_more.xml" value="0.15186615186615188" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/fragment_scan.xml" value="0.17300724637681159" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/fragment_transaction.xml" value="0.22145328719723184" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/fragment_transacton.xml" value="0.1526268115942029" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_1.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_2.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_3.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_4.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_5.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_6.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_7.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/home_item_8.xml" value="0.1598731884057971" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/list_image.xml" value="0.3350253807106599" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/list_transaction.xml" value="0.2" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/layout/my_nav.xml" value="0.13125" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/menu/item_list.xml" value="0.25" />
         <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/menu/list_nav_bottom.xml" value="0.25416666666666665" />
+        <entry key="..\:/NewProject/KogoPayDEVUIExample/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
       </map>
     </option>
   </component>
