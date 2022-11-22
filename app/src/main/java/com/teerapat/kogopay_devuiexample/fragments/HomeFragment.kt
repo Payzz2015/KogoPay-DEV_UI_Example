@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.teerapat.kogopay_devuiexample.*
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -48,9 +50,7 @@ class HomeFragment : Fragment() {
             Shortcut("button text", R.drawable.ic_addmoney),
             Shortcut("button text", R.drawable.ic_addmoney),
             Shortcut("More\nservices", R.drawable.ic_moreservices),
-        )
 
-        var shortcutList2 = mutableListOf(
             Shortcut("เติมเงิน", R.drawable.ic_topup),
             Shortcut("ส่งเงิน", R.drawable.ic_send),
             Shortcut("ร้องขอเงิน", R.drawable.ic_req),
@@ -66,13 +66,11 @@ class HomeFragment : Fragment() {
         transactionListRV.adapter = adapter
         transactionListRV.layoutManager = LinearLayoutManager(this.context)
 
+
         val adapter1 = ShortcutAdapter(shortcutList1)
         shortcutListRV1.adapter = adapter1
-        shortcutListRV1.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
+        shortcutListRV1.layoutManager = GridLayoutManager(this.context, 2,LinearLayoutManager.HORIZONTAL, false)
 
-        val adapter2 = ShortcutAdapter(shortcutList2)
-        shortcutListRV2.adapter = adapter2
-        shortcutListRV2.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
 
         iconNotification.setOnClickListener{
             Toast.makeText(this.context, "Notification", Toast.LENGTH_SHORT).show()

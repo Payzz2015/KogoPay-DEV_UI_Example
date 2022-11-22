@@ -131,23 +131,6 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/viewShortcut2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginStart="15dp">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/shortcutListRV2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </RelativeLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/transactionListView"

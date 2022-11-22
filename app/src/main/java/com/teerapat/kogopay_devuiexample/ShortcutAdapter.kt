@@ -28,11 +28,9 @@ class ShortcutAdapter (
                 Toast.makeText(it.context, "${shortcutText.text}", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
+
     override fun getItemCount(): Int {
         return shortcuts.size
     }
-
-
 }
