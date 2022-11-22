@@ -11,17 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.teerapat.kogopay_devuiexample.*
 import kotlinx.android.synthetic.main.fragment_account.*
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.btn_item1
-import kotlinx.android.synthetic.main.fragment_home.btn_item2
-import kotlinx.android.synthetic.main.fragment_home.btn_item3
-import kotlinx.android.synthetic.main.fragment_home.btn_item4
-import kotlinx.android.synthetic.main.fragment_home.btn_item5
-import kotlinx.android.synthetic.main.fragment_home.btn_item6
-import kotlinx.android.synthetic.main.fragment_home.btn_item7
-import kotlinx.android.synthetic.main.fragment_home.btn_item8
 import kotlinx.android.synthetic.main.fragment_home.iconHide
 import kotlinx.android.synthetic.main.fragment_home.iconNotification
-import kotlinx.android.synthetic.main.fragment_home.transactionListRV
 import kotlinx.android.synthetic.main.fragment_home.valueHeader
 
 
@@ -69,38 +60,37 @@ class AccountFragment : Fragment() {
             Toast.makeText(this.context, "ทั้งหมด", Toast.LENGTH_SHORT).show()
         }
 
+        var shortcutList1 = mutableListOf(
+            Shortcut("Add money", R.drawable.ic_addmoney),
+            Shortcut("Payment", R.drawable.ic_payment),
+            Shortcut("Request\nstatement", R.drawable.ic_reqstate),
+            Shortcut("Favorite", R.drawable.ic_fav),
 
-        btn_item1.setOnClickListener{
-            Toast.makeText(this.context, "เติมเงิน", Toast.LENGTH_SHORT).show()
-        }
+            Shortcut("History", R.drawable.ic_history),
+            Shortcut("button text", R.drawable.ic_addmoney),
+            Shortcut("button text", R.drawable.ic_addmoney),
+            Shortcut("More\nservices", R.drawable.ic_moreservices),
+        )
 
-        btn_item2.setOnClickListener{
-            Toast.makeText(this.context, "ส่งเงิน", Toast.LENGTH_SHORT).show()
-        }
+        var shortcutList2 = mutableListOf(
+            Shortcut("เติมเงิน", R.drawable.ic_topup),
+            Shortcut("ส่งเงิน", R.drawable.ic_send),
+            Shortcut("ร้องขอเงิน", R.drawable.ic_req),
+            Shortcut("ที่ชื่นชอบ", R.drawable.ic_fav),
 
-        btn_item3.setOnClickListener{
-            Toast.makeText(this.context, "ร้องขอเงิน", Toast.LENGTH_SHORT).show()
-        }
+            Shortcut("ประวัติ", R.drawable.ic_history),
+            Shortcut("แลกเปลี่ยน", R.drawable.ic_exchange),
+            Shortcut("อัตราแลกเปลี่ยน", R.drawable.ic_exchangerate),
+            Shortcut("บริการอื่นๆ", R.drawable.ic_moreservices),
+        )
 
-        btn_item4.setOnClickListener{
-            Toast.makeText(this.context, "ที่ชื่นชอบ", Toast.LENGTH_SHORT).show()
-        }
+        val adapter1 = ShortcutAdapter(shortcutList1)
+        shortcutListRV3.adapter = adapter1
+        shortcutListRV3.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
 
-        btn_item5.setOnClickListener{
-            Toast.makeText(this.context, "ประวัติ", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item6.setOnClickListener{
-            Toast.makeText(this.context, "แลกเปลี่ยน", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item7.setOnClickListener{
-            Toast.makeText(this.context, "อัตราแลกเปลี่ยน", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item8.setOnClickListener{
-            Toast.makeText(this.context, "บริการอื่นๆ", Toast.LENGTH_SHORT).show()
-        }
+        val adapter2 = ShortcutAdapter(shortcutList2)
+        shortcutListRV4.adapter = adapter2
+        shortcutListRV4.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
 
     }
 

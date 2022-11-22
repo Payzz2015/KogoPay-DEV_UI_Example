@@ -13,6 +13,7 @@
             android:name=".LoadingScreenActivity"
             android:theme="@style/Theme.KogoPayDEVUIExample.NoActionBarAndStatusBar"
             android:hardwareAccelerated="true"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

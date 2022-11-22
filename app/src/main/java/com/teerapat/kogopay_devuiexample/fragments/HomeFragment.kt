@@ -10,9 +10,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.teerapat.kogopay_devuiexample.R
-import com.teerapat.kogopay_devuiexample.Transaction
-import com.teerapat.kogopay_devuiexample.TransactionAdapter
+import com.teerapat.kogopay_devuiexample.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -40,9 +38,41 @@ class HomeFragment : Fragment() {
                 Transaction("Transfer","- 20.00 GBP","13 FEB 2022","09:00 am"),
             )
 
+        var shortcutList1 = mutableListOf(
+            Shortcut("Add money", R.drawable.ic_addmoney),
+            Shortcut("Payment", R.drawable.ic_payment),
+            Shortcut("Request\nstatement", R.drawable.ic_reqstate),
+            Shortcut("Favorite", R.drawable.ic_fav),
+
+            Shortcut("History", R.drawable.ic_history),
+            Shortcut("button text", R.drawable.ic_addmoney),
+            Shortcut("button text", R.drawable.ic_addmoney),
+            Shortcut("More\nservices", R.drawable.ic_moreservices),
+        )
+
+        var shortcutList2 = mutableListOf(
+            Shortcut("เติมเงิน", R.drawable.ic_topup),
+            Shortcut("ส่งเงิน", R.drawable.ic_send),
+            Shortcut("ร้องขอเงิน", R.drawable.ic_req),
+            Shortcut("ที่ชื่นชอบ", R.drawable.ic_fav),
+
+            Shortcut("ประวัติ", R.drawable.ic_history),
+            Shortcut("แลกเปลี่ยน", R.drawable.ic_exchange),
+            Shortcut("อัตราแลกเปลี่ยน", R.drawable.ic_exchangerate),
+            Shortcut("บริการอื่นๆ", R.drawable.ic_moreservices),
+        )
+
         val adapter = TransactionAdapter(transactionList)
         transactionListRV.adapter = adapter
         transactionListRV.layoutManager = LinearLayoutManager(this.context)
+
+        val adapter1 = ShortcutAdapter(shortcutList1)
+        shortcutListRV1.adapter = adapter1
+        shortcutListRV1.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
+
+        val adapter2 = ShortcutAdapter(shortcutList2)
+        shortcutListRV2.adapter = adapter2
+        shortcutListRV2.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
 
         iconNotification.setOnClickListener{
             Toast.makeText(this.context, "Notification", Toast.LENGTH_SHORT).show()
@@ -63,39 +93,6 @@ class HomeFragment : Fragment() {
         transactionAll.setOnClickListener {
             Toast.makeText(this.context, "See all", Toast.LENGTH_SHORT).show()
         }
-
-        btn_item1.setOnClickListener{
-            Toast.makeText(this.context, "Add money", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item2.setOnClickListener{
-            Toast.makeText(this.context, "Payment", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item3.setOnClickListener{
-            Toast.makeText(this.context, "Request statement", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item4.setOnClickListener{
-            Toast.makeText(this.context, "Favorite", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item5.setOnClickListener{
-            Toast.makeText(this.context, "History", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item6.setOnClickListener{
-            Toast.makeText(this.context, "button text", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item7.setOnClickListener{
-            Toast.makeText(this.context, "button text", Toast.LENGTH_SHORT).show()
-        }
-
-        btn_item8.setOnClickListener{
-            Toast.makeText(this.context, "More services", Toast.LENGTH_SHORT).show()
-        }
-
     }
 
 }
