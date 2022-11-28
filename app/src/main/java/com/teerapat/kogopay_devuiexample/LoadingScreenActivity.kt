@@ -19,11 +19,12 @@ class LoadingScreenActivity : AppCompatActivity() {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         }
 
+
         handler = Handler()
         handler.postDelayed({
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
-        },1000)
+        },10000)
     }
 }

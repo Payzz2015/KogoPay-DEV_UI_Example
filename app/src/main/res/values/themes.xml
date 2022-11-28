@@ -27,5 +27,9 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
+    <style name="BackGroundImageView">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/bg_test</item>
+    </style>
 
 </resources>
