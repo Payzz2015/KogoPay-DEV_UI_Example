@@ -19,10 +19,7 @@
         app:menu="@menu/item_list"
         app:labelVisibilityMode="labeled"
         app:itemHorizontalTranslationEnabled="false"
-        app:itemActiveIndicatorStyle="@color/colorPrimary"
-        app:elevation="10dp"
-        android:elevation="10dp"
-        />
+        app:elevation="10dp"/>
 
     <FrameLayout
         android:id="@+id/fragment_container"

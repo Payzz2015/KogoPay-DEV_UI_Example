@@ -3,6 +3,7 @@ package com.teerapat.kogopay_devuiexample
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import com.teerapat.kogopay_devuiexample.databinding.ActivityMainBinding

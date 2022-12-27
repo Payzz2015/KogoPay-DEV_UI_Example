@@ -7,8 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayoutMediator
 import com.teerapat.kogopay_devuiexample.*
+import kotlinx.android.synthetic.main.activity_tutorial.*
 import kotlinx.android.synthetic.main.fragment_account.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.iconHide
@@ -18,6 +22,7 @@ import kotlinx.android.synthetic.main.fragment_home.valueHeader
 
 class AccountFragment : Fragment() {
 
+    private lateinit var coinList: List<Coin>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,7 +35,21 @@ class AccountFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var newsList = mutableListOf(
+        coinList = mutableListOf(
+            Coin(R.drawable.ic_icon24,"KOGO Coin","KOGO","£28,727.00","1.46%"),
+            Coin(R.drawable.ic_icon24,"KOGO Coin 1","KOGO 1","£28,000.00","1.30%"),
+            Coin(R.drawable.ic_icon24,"KOGO Coin 2","KOGO 2","£20,000.00","1.15%"),
+            Coin(R.drawable.ic_icon24,"KOGO Coin 3","KOGO 3","£15,000.00","1.00%"),
+            Coin(R.drawable.ic_icon24,"KOGO Coin 4","KOGO 4","£10,000.00","0.46%"),
+        )
+
+        val adapterCoin = CoinAdapter(coinList)
+        view_coin.adapter = adapterCoin
+
+        TabLayoutMediator(tabCoin, view_coin, { tab, position ->
+        }).attach()
+
+        var newsList = listOf(
             News("KOGO Coin air drop", R.drawable.news_image_1),
             News("Lorem ipsum dolor sit amet, consectetur adipiscin.", R.drawable.news_image_2),
             News("Lorem ipsum dolor sit amet, consectetur adipiscin.", R.drawable.news_image_3)
@@ -70,9 +89,7 @@ class AccountFragment : Fragment() {
             Shortcut("button text", R.drawable.ic_addmoney),
             Shortcut("button text", R.drawable.ic_addmoney),
             Shortcut("More\nservices", R.drawable.ic_moreservices),
-        )
 
-        var shortcutList2 = mutableListOf(
             Shortcut("เติมเงิน", R.drawable.ic_topup),
             Shortcut("ส่งเงิน", R.drawable.ic_send),
             Shortcut("ร้องขอเงิน", R.drawable.ic_req),
@@ -86,11 +103,7 @@ class AccountFragment : Fragment() {
 
         val adapter1 = ShortcutAdapter(shortcutList1)
         shortcutListRV3.adapter = adapter1
-        shortcutListRV3.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
-
-        val adapter2 = ShortcutAdapter(shortcutList2)
-        shortcutListRV4.adapter = adapter2
-        shortcutListRV4.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)
+        shortcutListRV3.layoutManager = GridLayoutManager(this.context, 2,LinearLayoutManager.HORIZONTAL, false)
 
     }
 

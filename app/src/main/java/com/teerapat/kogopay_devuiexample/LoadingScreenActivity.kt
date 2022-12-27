@@ -22,9 +22,9 @@ class LoadingScreenActivity : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, TutorialActivity::class.java)
             startActivity(intent)
             finish()
-        },10000)
+        },2000)
     }
 }

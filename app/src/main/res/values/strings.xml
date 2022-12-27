@@ -15,4 +15,12 @@
     <string name="jacob_hawkins">Jacob Hawkins</string>
     <string name="more">More</string>
     <string name="logout">Log out</string>
+    <string name="or_skip_tutorial">or skip tutorial</string>
+    <string name="tap_anywhere_to_continue">Tap anywhere to continue</string>
+    <string name="get_started">Get started</string>
+    <string name="before_you_start">Before you start!</string>
+    <string name="kogo_coin">KOGO Coin</string>
+    <string name="kogo">KOGO</string>
+    <string name="_28_727_00">£28,727.00</string>
+    <string name="_1_46">1.46%</string>
 </resources>

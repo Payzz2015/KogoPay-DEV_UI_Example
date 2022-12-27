@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_coin">
+
+        <ImageView
+            android:id="@+id/logo_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kogo_coin"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/logo_coin"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kogo"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logo_coin"
+            app:layout_constraintTop_toBottomOf="@+id/title_coin" />
+
+        <TextView
+            android:id="@+id/cost_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_28_727_00"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_coin" />
+
+        <TextView
+            android:id="@+id/percent_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_46"
+            android:textColor="@color/green"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/coin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cost_coin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
